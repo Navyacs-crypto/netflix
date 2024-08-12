@@ -1,0 +1,280 @@
+
+body{
+    margin: 0;
+    background-color: #000;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),url(images/header-image.png);
+   
+}
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.logo{
+    height: 38px;
+    width: 127px;
+    padding-left: 50px;
+    padding-top: 26px;
+    
+}
+
+ nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color:#fff;
+    padding:7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+ }
+ .lang{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    width: 110px;
+    height: 33px;
+ }
+
+ .lang img{
+    width: 10px;
+    margin-left: 10px;
+ }
+ .b2{
+    width:110px;
+    height: 33px;
+ }
+ .headmain{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin: top 100px;
+    line-height: 0px;
+    font-family: sans-serif;
+ }
+ .headmain h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+ }
+ .headmain h3{
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 400;
+    line-height: 1px;
+ 
+ }
+ .headmain p{
+    font-size: 20px;
+    line: height 30px; 
+    font-weight: 300;
+ }
+ .email-signup{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    width: 440px;
+    margin-left: 150px;
+ }
+ .email-signup input{
+    flex: 1;
+    border: 0;
+    margin-left: 20px;
+    outline: 0;
+ }
+ .email-signup button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 30px;
+    cursor: pointer;
+ }
+ .features{
+    padding: 50px 12%;
+    font-size: 22px;
+ }
+ .row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+ }
+ .second-text{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+ }
+ .second-image{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+ }
+ .second-image img{
+    display: block;
+    width: 90%;
+    margin: auto;
+ }
+ .features h2{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+ }
+ .features p{
+    font-size: 23px;
+    font-weight:700;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+ }
+ .third-text{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+ }
+ .third-image{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+ }
+ .third-image img{
+    display: block;
+    width: 90%;
+    margin: auto;
+ }
+ .fourth-text{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+ }
+ .fourth-image{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+ }
+ .fourth-image img{
+    display: block;
+    width: 90%;
+    margin: auto;
+ }
+ .fifth-text{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+ }
+ .fifth-image{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+ }
+ .fifth-image img{
+    display: block;
+    width: 90%;
+    margin: auto;
+ }
+ .faq{
+    padding:10px 12px;
+    text-align: center;
+ }
+ .faq h2{
+    font-weight: 600;
+    font-size: 40px;
+ }
+ .para1{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+ }
+ .para1 li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+ }
+ .para1 li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+ }
+ label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+ }
+ input[type="radio"]{
+    display: none;
+ }
+ .para1 .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+ }
+ .para1 input[type="radio"]:checked + label+.content{
+    max-height: 600px;
+    padding:30px 20px;
+ }
+ .para1 input[type="radio"]:checked+label::after{
+    transform: rotate(135deg);
+ }
+.faq .email-signup{
+  max: width 600px; 
+  margin: 20px auto 60px;
+}
+.faq small{
+    font-size: 13px;
+}
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.lang{
+   color: #fff;
+   padding: 10px 20px;
+   border-radius: 3px;
+}
+.copy{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
