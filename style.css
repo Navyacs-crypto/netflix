@@ -1,4 +1,9 @@
-
+*{
+   margin: 0;
+   padding: 0;
+   font-family: "poppins",sans-serif;
+   box-sizing: border-box;
+}
 body{
     margin: 0;
     background-color: #000;
@@ -9,7 +14,9 @@ body{
     height: 100vh;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),url(images/header-image.png);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 44%, rgba(0, 0, 0, 1.8) 100%),url(images/header-image.png);
+    padding: 10px 8%;
+    position: relative;
    
 }
 nav{
@@ -17,13 +24,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 0;
 }
 .logo{
     height: 38px;
     width: 127px;
-    padding-left: 50px;
-    padding-top: 26px;
+    cursor: pointer;
     
 }
 
@@ -36,6 +42,7 @@ nav{
     font-size: 12px;
     border-radius: 4px;
     margin-left: 10px;
+    cursor: pointer;
  }
  .lang{
     display: inline-flex;
@@ -44,6 +51,7 @@ nav{
     border: 1px solid white;
     width: 110px;
     height: 33px;
+    padding: 7px 10px;
  }
 
  .lang img{
@@ -54,7 +62,9 @@ nav{
     width:110px;
     height: 33px;
  }
+ 
  .headmain{
+   width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -63,11 +73,16 @@ nav{
     margin: top 100px;
     line-height: 0px;
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
  }
  .headmain h1{
     font-size: 60px;
     line-height: 70px;
     font-weight: 600;
+    max-width: 650p;
  }
  .headmain h3{
     font-size: 30px;
@@ -78,7 +93,7 @@ nav{
  }
  .headmain p{
     font-size: 20px;
-    line: height 30px; 
+    line-height :30px; 
     font-weight: 300;
  }
  .email-signup{
@@ -89,7 +104,7 @@ nav{
     margin-top: 30px;
     overflow: hidden;
     width: 440px;
-    margin-left: 150px;
+    /* margin-left: 150px; */
  }
  .email-signup input{
     flex: 1;
@@ -236,7 +251,7 @@ nav{
     transform: rotate(135deg);
  }
 .faq .email-signup{
-  max: width 600px; 
+  max-width :600px; 
   margin: 20px auto 60px;
 }
 .faq small{
@@ -277,4 +292,16 @@ nav{
     font-size: 14px;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+/* style for border bottom for each section */
+
+.bb,  hr{
+   border-bottom: 5px solid #333;
+}
+
+hr{
+   position: absolute;
+   width: 100vw;
+   left: 0;
 }
